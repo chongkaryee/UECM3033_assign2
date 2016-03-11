@@ -44,8 +44,10 @@ Lower resolution picture
 ![ lower resolution picture.PNG]( lower resolution picture.PNG)
  
  
+
 Better resolution picture
 ![ better resolution picture.PNG]( better resolution picture.PNG)
+
 
 
 Explain how you generate these pictures from task2.py.
