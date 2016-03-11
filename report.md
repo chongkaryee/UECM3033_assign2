@@ -15,13 +15,14 @@ Put here your picture file (nana.png)
 ![ nana.jpg]( nana.jpg)
   
 How many non zero element in $\Sigma$?
-There are 800 non zero elements for the red, green and blue.
-Put here your lower and better resolution pictures. 
-Lower resolution picture (lower resolution picture.png)
- 
+##There are 800 non zero elements for the red, green and blue.
 
-Better resolution picture (better resolution picture.png)
+Put here your lower and better resolution pictures. 
+Lower resolution picture
+![ lower resolution picture.PNG]( lower resolution picture.PNG)
  
+Better resolution picture
+![ better resolution picture.PNG]( better resolution picture.PNG)
 
 Explain how you generate these pictures from task2.py.
 Firstly, the “nana.png” image which we read is assigned to img and then generate array into r,g,b matrix. By using sp.linalg.svd decomposition, each r,g,b matrix is decomposed into U, S and V matrix. Then, number of non-zero elements in Sigma for r,g,b is counted respectively. A new Sigma matrix is created by keep the first n non zero element and change the other non zero element to zero by zero_like function. In order to construct a lower resolution matrix, the dimension of Sigma is changed to 30 by using indexing function like [0:30]. Then a better resolution image is also created by changing the resolution of the picture to 200 by repeating the same steps. 
